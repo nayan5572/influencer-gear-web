@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*===start navbar css start===*/
+.nav-main {
+    padding: 0 120px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav>ul {
+    display: flex;
+    margin-top: 96px;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    margin-right: 34px;
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 87px;
+}
+
+/*===start navbar css end===*/
+/*===start camera css start===*/
+.camera-main {
+    max-width: 1440px;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.camera-content {
+    margin-top: 100px;
+}
+
+.camera-title {
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.camera-description {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.camera-btn {
+    padding: 10px 24px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: 0;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.camera-image-content {
+    margin-top: 80px;
+    height: 492px;
+    width: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    margin-right: -190px;
+}
+
+.camera-image-content img {
+    width: 90%;
+    padding: 10px;
+}
+
+/*===start camera css end===*/
+/*===brand css start===*/
+.brand-logo {
+    padding: 0 227px;
+    margin-top: 70px;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.brand img {
+    margin-right: 4px;
+    padding: 30px;
+}
+
+/*===brand css end===*/
+
+/*===css for responsive start===*/
+@media screen and (max-width: 576px) {
+    .nav {
+        display: none;
+    }
+
+    .camera-main {
+        flex-direction: column-reverse;
+    }
+
+    .camera-image-content {
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    .camera-main {
+        padding: 0;
+    }
+
+    .camera-content {
+        margin-top: -80px;
+        text-align: center;
+    }
+
+    .camera-title {
+        color: #3A3A3A;
+        text-align: center;
+        color: #3A3A3A;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+
+    .camera-description {
+        color: #3A3A3A;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 18px;
+    }
+    .brand{
+        border: 0;
+        justify-content: space-evenly;
+        padding-top: 60px 227px;
+    }
+    .brand-logo {
+        padding: 0;
+        margin-top: 50px;
+    }
+    .brand img{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    .camera-main {
+        flex-direction: column-reverse;
+    }
+
+    .camera-image-content {
+        margin: 0 auto;
+    }
+}
+
+/*===css for responsive end===*/
